@@ -1,0 +1,210 @@
+@font-face{
+    font-family: Eras Demi ITC;
+    src: url(../../fonts/eras-demi-itc.ttf);
+  }
+  @font-face{
+    font-family: Eras Medium ITC;
+    src: url(../../fonts/eras-medium-itc.ttf);
+  }
+  @font-face{
+    font-family: Eras Bold ITC;
+    src: url(../../fonts/eras-bold-itc.ttf);
+  }
+  
+.top-nav {
+    background-color: #283492;
+    width: 100%;
+    top: 0;
+    font-family: Eras Demi ITC;
+    z-index: 1;
+    position: relative;
+}
+.contai{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top-nav .element {
+    justify-content: space-between;
+}
+.list-red .header-nav-item{
+  margin: initial;
+  background-color: #fff;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.header-nav-item a img{
+  width: 108px;
+  padding: .75rem;
+  max-width: none;
+}
+.element{
+    display: flex;
+    padding: 0 1.875rem;
+}
+.list-red {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.list-red .header-nav-red a{
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+.list-red .header-nav-red a:hover{
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+.list-red .header-nav-red a {
+  padding: 1.05rem .78125rem;
+  display: block;
+  color: #fff;
+  font-weight: 350;
+}
+.list-red .header-nav-deals{
+  display: block;
+  margin-left: auto;
+  width: 152px;
+  padding: .85rem 1.125rem;
+}
+.header-nav-deals img{
+  width: 110px;
+  max-width: none;
+}
+
+.main-header {
+  background-color: #fff;
+  z-index: 1;
+  border: 1px solid #d8d8d8;
+}
+.main-header .nav-catg{
+    color: #000;
+    font-weight: 500;
+    display: block;
+    padding: 1rem .88rem;
+    font-family: Eras Medium ITC;
+    text-decoration: none;
+    background-color: transparent;
+    margin-left: 1rem;
+}
+.main-header .nav-catg:hover {
+    color: #283492;
+    font-weight: 800;
+}
+
+.btn-outline-ini{
+    color: #fff;
+    border-color: #1bbc9b;
+    background-color: transparent;
+    background-image: none;
+    font-weight: 500;
+}
+.btn-outline-ini:hover{
+    color: #1bbc9b;
+    background: #fff;
+    font-weight: 500;
+    
+}
+
+.cont-bsc{
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+  }
+.cont-bsc input#search{
+    width: 300px;
+    height: 40px;
+    background: white;
+    padding-left: 45px;
+    border-radius: 5px;
+  }
+.cont-bsc .icon{
+    position: absolute;
+    margin-left: 14px;
+    margin-top: 8px;
+    z-index: 1;
+    color: #4f5b66;
+  }
+
+  .app-footer{
+    padding: 6rem 9rem 1.5rem;
+    background-image: linear-gradient(90deg,#1a237e,#3949ab);
+    position: relative;
+  }
+  .footer-top{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 4.5rem;
+  }.footer-left{
+    display: inline-block;
+    flex: 0 0;
+    padding-right: 4.5rem;
+    border-right: .0625rem solid #5c6bc0;
+    text-align: left;
+  }
+  .footer-logo{
+    margin-bottom: 3.375rem;
+    width: 7.9375rem;
+    margin: 1.5rem 0;
+  }
+  .footer-link-list{
+    display: block;
+    margin-bottom: 1.875rem;
+    font: 700 .875rem/1.875rem Eras Demi ITC;
+    text-align: left;
+    text-transform: uppercase;
+    list-style: none;
+    padding-left: 0
+  }
+  .footer-top .footer-link-list a{
+    color: #fff;
+    text-decoration: none;
+    font-family: Eras Demi ITC;
+    cursor: pointer;
+  }
+  .footer-top .footer-link-list a:hover{
+    color: #fdd835;
+  }
+  .footer-right{
+    display: inline-block;
+    flex: 1 0;
+    padding-left: 4.5rem;
+    color: #fff;
+  }
+  .footer-right h4{
+    font-family: Eras Demi ITC;
+  }
+  .footer-right p{
+    font: 400 .875rem/1.5rem Eras Medium ITC;
+  }
+  .footer-social{
+    top: 380px;
+    left: unset;
+    position: absolute;
+    padding-left: 0;
+  }
+  .app-footer .footer-social a{
+    margin-right: 9px;
+    color: white;
+  }
+  .app-footer .footer-social a:hover{
+    color: #fdd835;
+  }
+  .footer-bottom{
+    flex-direction: row;
+    padding: 1.5rem 1.5rem 0;
+    border-top: .0625rem solid #5c6bc0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font: 400 .75rem/1.5rem Eras Demi ITC;
+    text-align: center;
+  }

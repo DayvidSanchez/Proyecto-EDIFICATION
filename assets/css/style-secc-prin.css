@@ -1,0 +1,411 @@
+@font-face{
+    font-family: Eras Demi ITC;
+    src: url(../../fonts/eras-demi-itc.ttf);
+  }
+@font-face{
+    font-family: Eras Medium ITC;
+    src: url(../../fonts/eras-medium-itc.ttf);
+}
+@font-face{
+    font-family: Eras Bold ITC;
+    src: url(../../fonts/eras-bold-itc.ttf);
+}
+.secc-entrance{
+    background-image: url(https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2019/10/cocina.jpg);
+    position: relative;
+    z-index: 11;
+    padding: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+}
+.h-text-center{
+    text-align: center;
+}
+.entrance-kitc{
+    background-image: linear-gradient(135deg
+        ,rgba(63,81,181,.9),rgba(40,53,147,.9));
+    padding: 9.625rem 7.375rem;
+    content: "";
+    display: block;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    
+}
+.entrance-kitc .row{
+    left: 0;
+    width: 100%
+}
+.mb24{
+    margin-bottom: 1.5rem;
+}
+.row{
+    position: relative;
+    z-index: 2;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+.kitc-content{
+    z-index: 1;
+    width: inherit;
+}
+.blurb{
+    display: inline-block;
+    overflow: hidden;
+}
+.blurb-large{
+    max-width: 100%;
+}
+.entrance-kitc .heading-label{
+    color: #fdd835;
+}
+.entrance-kitc p{
+    margin-top: 2.0625rem;
+    font-family: Eras Medium ITC;
+    font-size: 1.125rem;
+}
+.heading-secondary{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.kitc-content .h1{
+    margin-bottom: 0;
+    color: #fff;
+    line-height: 1.03704;
+    font-family: Eras Bold ITC;
+}
+.kitc-content p{
+    margin-top: 2.0625rem;
+    font-size: 1.125rem;
+    margin-bottom: 0;
+    color: #fff;
+    font-family: Eras Demi ITC;
+}
+
+.decoration-carusel{
+    margin: 3.25rem auto 1.25rem;
+}
+.carusel-headline{
+    margin-bottom: 2.3125rem;
+    font-size: 2.25rem;
+    color: #424242;
+    font-family: Eras Demi ITC;
+    line-height: 1;
+    text-align: center;
+}
+.carusel-article-container{
+    display: flex;
+    width: 100vw;
+    padding: .3125rem 0;
+}
+.slider-featured {
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider{
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    position: relative;
+}
+.carusel-article-item{
+    width: 620px;
+    height: 312px;
+    margin: 0 .625rem;
+    position: relative;
+    overflow: hidden;
+    scroll-snap-align: center;
+    box-shadow: 0 2px 4px 0 #ababab;
+}
+.slider-item {
+    flex: none;
+    outline: none;
+}
+.carusel-article-link{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.carusel-image{
+    display: block;
+    width: 100%;
+}
+.carusel-image-descrip{
+    bottom: 18px;
+    left: 18px;
+    max-width: 400px;
+    padding: .3125rem 1.125rem .5625rem;
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+}
+.carusel-title{
+    max-width: none;
+    margin-bottom: .3125rem;
+    font-size: 1.75rem;
+    text-overflow: clip;
+    white-space: normal;
+    overflow: initial;
+    color: #fff;
+    font-family: Eras Demi ITC;
+    line-height: 1.2;
+}
+.carusel-read-time{
+    font-size: .75rem;
+    color: #fff;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.bullet-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.3125rem auto 1.25rem;
+}
+.h-relative{
+    position: relative;
+}
+.button-prev{
+    left: 5px;
+}
+.arrow-button{
+    display: flex;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    width: 8%;
+    height: 100%;
+    border: none;
+    background-color: initial;
+    cursor: pointer;
+}
+.h-a11y-screenreader-only{
+    overflow: hidden;
+    font-size: 0;
+    text-indent: 200%;
+    white-space: nowrap;
+}
+.carusel-nav-item{
+    display: flex;
+    margin-right: .375rem;
+    margin-left: .375rem;
+}
+.nav-bullet{
+    width: 7px;
+    height: 7px;
+    padding: 0;
+    border-radius: 100%;
+    border: 1px solid #d1d1d1;
+    background-color: #d1d1d1;
+}
+.h-a11y-screenreader-only{
+    overflow: hidden;
+    font-size: 0;
+    text-indent: 200%;
+    white-space: nowrap;
+}
+
+.Carousel{
+    margin: 5.25rem auto 1.25rem;
+}
+.Carousel h2{
+    margin-bottom: 2.3125rem;
+    font-size: 1.75rem;
+    line-height: 38px;
+    padding-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-align: center;
+    font-family: Eras Demi ITC;
+}
+
+.slick-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+.slick{
+    position: relative;
+    width: 620px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+.slick h4{
+    position: absolute;
+    z-index: 1;
+    font-size: 1.75rem;
+    line-height: 23px;
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+    padding: 15px;
+    bottom: 18px;
+    left: 36px;
+    max-width: 400px;
+    padding: .3125rem 1.125rem .5625rem;
+    font-family: Eras Demi ITC;
+}
+.slick h4 small{
+    font-size: .75rem;
+    display: block;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: .4125rem;
+}
+.slick a img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+    transition: .3s ease-in-out;
+}
+.slick a img:hover{
+    opacity: .85;
+}
+
+.slick-arrow{
+    border-radius: 30px;
+    background-color: #fdd835;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    border: 0;
+    cursor: pointer;
+}
+.slick-arrow:focus{
+    outline: 0;
+}
+.slick-arrow svg{
+    width: 12px;
+    height: 100%;
+    color: rgba(0,0,0,.7);
+}
+.slick-prev{
+    left: 0px;
+}
+.slick-next{
+    right: 0px;
+}
+
+.container-all{
+    height: 100%;
+    position: absolute;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+.container-all a{
+    text-decoration: none;
+}
+
+.container-all:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.container-all:target .popup-l{
+    left: 25%;
+    transform: rotate(0deg) translate(-22%, -15%);
+    visibility: visible;
+    z-index: 1;
+}
+
+
+.popup-l{
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    background: white;
+    visibility: hidden;
+    top: -80%;
+    left: -80%;
+    transition: all 800ms;
+}
+
+.img{
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-text{
+    width: 60%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+
+.container-text h1{
+    font-size: 30px;
+    font-family: Eras Demi ITC;
+}
+
+.container-text p{
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: Eras Medium ITC;
+}
+
+
+.btn-close-popup{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    padding: 20px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    line-height: 10px;
+}
+
+@media screen and (max-width: 900px){
+    .popup{
+        flex-direction: column;
+        height: 100%;
+        max-height: 800px;
+    }
+
+    .img{
+        width: 100%;
+        height: 40%;
+    }
+
+    .container-text{
+        width: 100%;
+        height: 60%;
+        padding: 80px;
+    }
+
+}
