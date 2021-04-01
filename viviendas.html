@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Viviendas</title>
+
+    <link rel="shortcut icon" href="assets/img/decoration-logo.png">
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+
+    <!-- MY CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style-secc-prin.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/header-nav-foo.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/edification-colm-catg.css">
+
+    <script defer src="assets/js/main.js"></script>
+
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="element">
+            
+            <ul class="list-red">
+                <li class="header-nav-item">
+                    <a href="index.html"><img src="assets/img/edification-logo-bl.png"></a>
+                </li>
+                <li class="header-nav-red">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="header-nav-red">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="header-nav-red">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="header-nav-red">
+                    <a href=""><i class="fab fa-pinterest"></i></a>
+                </li>
+                <li class="header-nav-deals">
+                    <a href="#"><img src="assets/img/shop-deals.png"></a>
+                </li>
+            </ul>
+        </div>
+</nav>
+<header class="navbar navbar-expand-lg main-header">
+    <div class="container">
+    <form class="form-inline my-2 my-lg-0">
+        <div class="cont-bsc">
+        <span class="icon"><i class="fa fa-search"></i></span>
+        <input type="search" id="search" placeholder="Buscar adorno" />
+        </div>
+      </form>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-catg" href="cocina.html">Cocina</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-catg" href="cuarto.html">Cuarto</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-catg" href="sala.html">Sala</a>
+          </li>        
+        <li class="nav-item">
+          <a class="nav-catg" href="bathroom.html">Baño</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-catg" href="piso.html">Piso</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-catg" href="ventanas.html">Ventanas</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-catg" href="viviendas.html">Renovación de viviendas</a>
+        </li>
+      </ul>
+    </div>
+</div>
+</header>
+
+<div class="Carousel">
+    <h2>Ideas de inspiración, decoración y diseño para el ambiente de su nueva vivienda</h2>
+    <div class="slick-list" id="slick-list">
+        <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+        </button>
+        <div class="slick-track" id="track">
+            <div class="slick">
+                <div>
+                    <a href="/">
+                        <h4>¿Qué es Home Staging?<small>4 minutos leído</small></h4>
+                        <picture>
+                            <img src="https://www.elmueble.com/medio/2017/08/30/dormitorio-en-marrones-y-verdes_00446965_b414a907_1612x2000.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <div class="slick">
+                <div>
+                    <a href="/">
+                        <h4>¿Cómo hacer que una habitación parezca más grande?<small>3 minutos leído</small></h4>
+                        <picture>
+                            <img src="https://cde.3.elcomercio.pe/ima/0/1/7/2/7/1727346.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <div class="slick">
+                <div>
+                    <a href="/">
+                        <h4>Dale un toque empresarial a tu cuarto<small>4 minutos leído</small></h4>
+                        <picture>
+                            <img src="https://static.vix.com/es/sites/default/files/styles/4x3/public/imj/hogartotal/C/C%C3%B3mo%20decorar%20mi%20cuarto%20fashion.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <div class="slick">
+                <div>
+                    <a href="/">
+                        <h4>Crea el mejor ambiente laboral en su cuarto<small>2 minutos leído</small></h4>
+                        <picture>
+                            <img src="https://elcomercio.pe/resizer/AZvqzf-l_DLAzLJ8Op-PXe4G-aY=/1200x800/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/LHYKEMLTUNF2NOHKLQNOKUHCRQ.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <div class="slick">
+                <div>
+                    <a href="/">
+                        <h4>¿Te gusta los colores pasteles?<small>5 minutos leído</small></h4>
+                        <picture>
+                            <img src="https://tendenzias.com/wp-content/uploads/2016/07/colores-para-cuartos-de-ninos-agua-marina-1200x675.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <div class="slick">
+                <div>
+                    <a href="/">
+                        <h4>El cómo decores tu cuarto puede influir en sueños más placenteros<small>4 minutos leído</small></h4>
+                        <picture>
+                            <img src="https://cafeversatil.com/bricoydeco/wp-content/uploads/2016/08/09_guetzli-18.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <div class="slick">
+                <div>
+                    <a href="/">
+                        <h4>Ideas para decorar el cuarto de un adolescente<small>7 minutos leído</small></h4>
+                        <picture>
+                            <img src="https://s3.amazonaws.com/businessinsider.mx/wp-content/uploads/2020/08/28104027/remodelacioncuarto.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <div class="slick">
+                <div>
+                    <a href="/">
+                        <h4>¿Te gustan los colores? Esto es para tí<small>5 minutos leído</small></h4>
+                        <picture>
+                            <img src="https://espaciohogar.com/wp-content/uploads/2016/04/colores-para-cuartos-juveniles-paredes-azules-techo-blanco-1200x900.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <div class="slick">
+                <div>
+                    <a href="/">
+                        <h4>Crea un espacio de trabajo o de juegos, el límite tu lo pones<small>3 minutos leído</small></h4>
+                        <picture>
+                            <img src="https://el124.com/wp-content/uploads/2020/08/cuarto-gamer-16.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <div class="slick">
+                <div>
+                    <a href="/">
+                        <h4>Ideas para cuartos para niñas<small>5 minutos leído</small></h4>
+                        <picture>
+                            <img src="https://tododekpop.com/wp-content/uploads/2020/04/como-decorar-cuarto-bts.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+        </button>
+    </div>
+</div>
+
+<section class="kitc-category">
+    <div class="kitc-article"><h1 class="kitc-article-heading">Ideas para tus Ventanas</h1></div>
+    <ul class="kitc-article-inner">
+        <li class="category-column">
+            <a class="h-text-decoration-none"><h2 class="column-name">VIVIENDA</h2></a>
+            <a class="top-category-article h-text-decoration-none" style="flex-direction: inherit;" href="#vivienda"   ><img class="category-top-img" src="https://www.milideas.net/wp-content/uploads/decorar_tapar_ventanas_tela_encaje_2-1280x720.jpg">
+            <div class="column-description" ><h3 class="top-category-title">Las ventanas negras son la próxima gran tendencia</h3><p class="read-time">3 minutos leerlo</p></div>
+            <div class="container-all" id="vivienda">
+                <div class="popup-l">
+                    <div class="img" style="background-image: url(https://www.milideas.net/wp-content/uploads/decorar_tapar_ventanas_tela_encaje_2-1280x720.jpg);"></div>
+                    <div class="container-text">
+                        <h1>WINDOWS</h1>
+                        <h3>Las ventanas negras son la próxima gran tendenci</h3>
+                        <p>Si alguna vez se ha preguntado cómo aprovechar al máximo el almacenamiento de su sala de estar, no está solo. Casi todos los propietarios están buscando formas de mantener funcional su habitación más utilizada y, al mismo tiempo, mantenerla estéticamente atractiva. A la luz de eso, decidimos pedir consejo a los expertos. Le pedimos a seis profesionales del diseño de interiores que compartieran sus mejores trucos de almacenamiento en el salón.
+                            Esto es lo que tenían que decir:</p>
+                        <h3>INVIERTE EN UNA OTOMANA DE ALMACENAMINETO</h3>
+                        <p>“Las otomanas de almacenamiento son una gran solución para las salas de estar porque tienen un doble propósito. Además de tener un lugar encantador 
+                            para descansar los pies, brindan un espacio de buen tamaño para guardar los artículos que no desea en toda la sala de estar. Este podría ser un 
+                            buen lugar para colocar mantas o almohadas adicionales, tal vez incluso sábanas si tiene un sofá cama plegable. Las otomanas de almacenamiento 
+                            pueden guardar DVD y juegos, controles remotos y esas revistas que se amontonan en la sala de estar. Este mueble funcional es el lugar perfecto 
+                            para guardar artículos antes de que lleguen los invitados ".</p>
+                        <h3>NO PASES POR ALTO LOS GANCHOS DE LA PARED</h3>
+                        <p>Instalar un par de ganchos de pared es una forma sencilla de organizar sombreros, abrigos y carteras sin desordenar cajones y mostradores.</p>
+                        <h3>OCULTAR EL DESORDEN</h3>
+                        <p>Algunos artículos, como los libros, se pueden almacenar muy bien, mientras que otros, como papeles, juguetes para niños o pequeños dispositivos electrónicos, pueden ser una monstruosidad.</p>
+                    </div>
+
+                    <a href="#" class="btn-close-popup">X</a>
+                </div>
+            </div>
+        </a>
+        </li>
+        <li class="category-column">
+            <a class="h-text-decoration-none"><h2 class="column-name">VIVIENDA</h2></a>
+            <a class="top-category-article h-text-decoration-none" style="flex-direction: inherit;" href="#vivienda2"><img class="category-top-img" src="https://www.elmueble.com/medio/2016/11/21/00365416_8e624f43.jpg">
+            <div class="column-description"><h3 class="top-category-title">Ideas para ventanas en tu casa</h3><p class="read-time">7 minutos leerlo</p></div>
+            <div class="container-all" id="vivienda2">
+                <div class="popup-m">
+                    <div class="img" style="background-image: url(https://www.elmueble.com/medio/2016/11/21/00365416_8e624f43.jpg);"></div>
+                    <div class="container-text">
+                        <h1>WINDOWS</h1>
+                        <h3>Ideas para ventanas en tu casa</h3>
+                        <p>Si alguna vez se ha preguntado cómo aprovechar al máximo el almacenamiento de su sala de estar, no está solo. Casi todos los propietarios están buscando formas de mantener funcional su habitación más utilizada y, al mismo tiempo, mantenerla estéticamente atractiva. A la luz de eso, decidimos pedir consejo a los expertos. Le pedimos a seis profesionales del diseño de interiores que compartieran sus mejores trucos de almacenamiento en el salón.
+                            Esto es lo que tenían que decir:</p>
+                        <h3>INVIERTE EN UNA OTOMANA DE ALMACENAMINETO</h3>
+                        <p>“Las otomanas de almacenamiento son una gran solución para las salas de estar porque tienen un doble propósito. Además de tener un lugar encantador 
+                            para descansar los pies, brindan un espacio de buen tamaño para guardar los artículos que no desea en toda la sala de estar. Este podría ser un 
+                            buen lugar para colocar mantas o almohadas adicionales, tal vez incluso sábanas si tiene un sofá cama plegable. Las otomanas de almacenamiento 
+                            pueden guardar DVD y juegos, controles remotos y esas revistas que se amontonan en la sala de estar. Este mueble funcional es el lugar perfecto 
+                            para guardar artículos antes de que lleguen los invitados ".</p>
+                        <h3>NO PASES POR ALTO LOS GANCHOS DE LA PARED</h3>
+                        <p>Instalar un par de ganchos de pared es una forma sencilla de organizar sombreros, abrigos y carteras sin desordenar cajones y mostradores.</p>
+                        <h3>OCULTAR EL DESORDEN</h3>
+                        <p>Algunos artículos, como los libros, se pueden almacenar muy bien, mientras que otros, como papeles, juguetes para niños o pequeños dispositivos electrónicos, pueden ser una monstruosidad.</p>
+                    </div>
+
+                    <a href="#" class="btn-close-popup">X</a>
+                </div>
+            </div></a>
+        </li>
+        <li class="category-column">
+            <a class="h-text-decoration-none"><h2 class="column-name">VIVIENDA</h2></a>
+            <a class="top-category-article h-text-decoration-none" style="flex-direction: inherit;" href="#vivienda3"><img class="category-top-img" src="https://madegar.com/blog/wp-content/uploads/Decoraci%C3%B3n-de-Interior-Puertas-y-Ventanas.jpg">
+            <div class="column-description"><h3 class="top-category-title">Las mejores cajas de ventana de 2021</h3><p class="read-time">4 minutos leerlo</p></div>
+            <div class="container-all" id="vivienda3">
+                <div class="popup-r">
+                    <div class="img" style="background-image: url(https://madegar.com/blog/wp-content/uploads/Decoraci%C3%B3n-de-Interior-Puertas-y-Ventanas.jpg);"></div>
+                    <div class="container-text">
+                        <h1>WINDOWS</h1>
+                        <h3>Las mejores cajas de ventana de 2021</h3>
+                        <p>Si alguna vez se ha preguntado cómo aprovechar al máximo el almacenamiento de su sala de estar, no está solo. Casi todos los propietarios están buscando formas de mantener funcional su habitación más utilizada y, al mismo tiempo, mantenerla estéticamente atractiva. A la luz de eso, decidimos pedir consejo a los expertos. Le pedimos a seis profesionales del diseño de interiores que compartieran sus mejores trucos de almacenamiento en el salón.
+                            Esto es lo que tenían que decir:</p>
+                        <h3>INVIERTE EN UNA OTOMANA DE ALMACENAMINETO</h3>
+                        <p>“Las otomanas de almacenamiento son una gran solución para las salas de estar porque tienen un doble propósito. Además de tener un lugar encantador 
+                            para descansar los pies, brindan un espacio de buen tamaño para guardar los artículos que no desea en toda la sala de estar. Este podría ser un 
+                            buen lugar para colocar mantas o almohadas adicionales, tal vez incluso sábanas si tiene un sofá cama plegable. Las otomanas de almacenamiento 
+                            pueden guardar DVD y juegos, controles remotos y esas revistas que se amontonan en la sala de estar. Este mueble funcional es el lugar perfecto 
+                            para guardar artículos antes de que lleguen los invitados ".</p>
+                        <h3>NO PASES POR ALTO LOS GANCHOS DE LA PARED</h3>
+                        <p>Instalar un par de ganchos de pared es una forma sencilla de organizar sombreros, abrigos y carteras sin desordenar cajones y mostradores.</p>
+                        <h3>OCULTAR EL DESORDEN</h3>
+                        <p>Algunos artículos, como los libros, se pueden almacenar muy bien, mientras que otros, como papeles, juguetes para niños o pequeños dispositivos electrónicos, pueden ser una monstruosidad.</p>
+                    </div>
+
+                    <a href="#" class="btn-close-popup">X</a>
+                </div>
+            </div></a>
+        </li>
+        <li class="category-column">
+            <a class="h-text-decoration-none"><h2 class="column-name">VIVIENDA</h2></a>
+            <a class="top-category-article h-text-decoration-none" style="flex-direction: inherit;" href="#vivienda4"><img class="category-top-img" src="https://hips.hearstapps.com/es.h-cdn.co/mcres/images/mi-casa/ideas-decoracion/amplitud-de-miras/ventanas-de-pvc/1683110-1-esl-ES/ventanas-de-pvc.jpg">
+            <div class="column-description"><h3 class="top-category-title">Los mejores diseños para percianas</h3><p class="read-time">4 minutos leerlo</p></div>
+            <div class="container-all" id="vivienda4">
+                <div class="popup-l">
+                    <div class="img" style="background-image: url(https://hips.hearstapps.com/es.h-cdn.co/mcres/images/mi-casa/ideas-decoracion/amplitud-de-miras/ventanas-de-pvc/1683110-1-esl-ES/ventanas-de-pvc.jpg);"></div>
+                    <div class="container-text">
+                        <h1>WINDOWS</h1>
+                        <h3>Los mejores diseños para percianas</h3>
+                        <p>Si alguna vez se ha preguntado cómo aprovechar al máximo el almacenamiento de su sala de estar, no está solo. Casi todos los propietarios están buscando formas de mantener funcional su habitación más utilizada y, al mismo tiempo, mantenerla estéticamente atractiva. A la luz de eso, decidimos pedir consejo a los expertos. Le pedimos a seis profesionales del diseño de interiores que compartieran sus mejores trucos de almacenamiento en el salón.
+                            Esto es lo que tenían que decir:</p>
+                        <h3>INVIERTE EN UNA OTOMANA DE ALMACENAMINETO</h3>
+                        <p>“Las otomanas de almacenamiento son una gran solución para las salas de estar porque tienen un doble propósito. Además de tener un lugar encantador 
+                            para descansar los pies, brindan un espacio de buen tamaño para guardar los artículos que no desea en toda la sala de estar. Este podría ser un 
+                            buen lugar para colocar mantas o almohadas adicionales, tal vez incluso sábanas si tiene un sofá cama plegable. Las otomanas de almacenamiento 
+                            pueden guardar DVD y juegos, controles remotos y esas revistas que se amontonan en la sala de estar. Este mueble funcional es el lugar perfecto 
+                            para guardar artículos antes de que lleguen los invitados ".</p>
+                        <h3>NO PASES POR ALTO LOS GANCHOS DE LA PARED</h3>
+                        <p>Instalar un par de ganchos de pared es una forma sencilla de organizar sombreros, abrigos y carteras sin desordenar cajones y mostradores.</p>
+                        <h3>OCULTAR EL DESORDEN</h3>
+                        <p>Algunos artículos, como los libros, se pueden almacenar muy bien, mientras que otros, como papeles, juguetes para niños o pequeños dispositivos electrónicos, pueden ser una monstruosidad.</p>
+                    </div>
+
+                    <a href="#" class="btn-close-popup">X</a>
+                </div>
+            </div></a>
+        </li>
+        <li class="category-column">
+            <a class="h-text-decoration-none"><h2 class="column-name">VIVIENDA</h2></a>
+            <a class="top-category-article h-text-decoration-none" style="flex-direction: inherit;" href="#vivienda5"><img class="category-top-img" src="https://hips.hearstapps.com/es.h-cdn.co/mcres/images/mi-casa/ideas-decoracion/amplitud-de-miras/funcional/1683075-1-esl-ES/funcional.jpg">
+            <div class="column-description"><h3 class="top-category-title">Las mejores ventanas de repuesto</h3><p class="read-time">5 minutos leerlo</p></div>
+            <div class="container-all" id="vivienda5">
+                <div class="popup-m">
+                    <div class="img" style="background-image: url(https://hips.hearstapps.com/es.h-cdn.co/mcres/images/mi-casa/ideas-decoracion/amplitud-de-miras/funcional/1683075-1-esl-ES/funcional.jpg);"></div>
+                    <div class="container-text">
+                        <h1>WINDOWS</h1>
+                        <h3>Las mejores ventanas de repuesto</h3>
+                        <p>Si alguna vez se ha preguntado cómo aprovechar al máximo el almacenamiento de su sala de estar, no está solo. Casi todos los propietarios están buscando formas de mantener funcional su habitación más utilizada y, al mismo tiempo, mantenerla estéticamente atractiva. A la luz de eso, decidimos pedir consejo a los expertos. Le pedimos a seis profesionales del diseño de interiores que compartieran sus mejores trucos de almacenamiento en el salón.
+                            Esto es lo que tenían que decir:</p>
+                        <h3>INVIERTE EN UNA OTOMANA DE ALMACENAMINETO</h3>
+                        <p>“Las otomanas de almacenamiento son una gran solución para las salas de estar porque tienen un doble propósito. Además de tener un lugar encantador 
+                            para descansar los pies, brindan un espacio de buen tamaño para guardar los artículos que no desea en toda la sala de estar. Este podría ser un 
+                            buen lugar para colocar mantas o almohadas adicionales, tal vez incluso sábanas si tiene un sofá cama plegable. Las otomanas de almacenamiento 
+                            pueden guardar DVD y juegos, controles remotos y esas revistas que se amontonan en la sala de estar. Este mueble funcional es el lugar perfecto 
+                            para guardar artículos antes de que lleguen los invitados ".</p>
+                        <h3>NO PASES POR ALTO LOS GANCHOS DE LA PARED</h3>
+                        <p>Instalar un par de ganchos de pared es una forma sencilla de organizar sombreros, abrigos y carteras sin desordenar cajones y mostradores.</p>
+                        <h3>OCULTAR EL DESORDEN</h3>
+                        <p>Algunos artículos, como los libros, se pueden almacenar muy bien, mientras que otros, como papeles, juguetes para niños o pequeños dispositivos electrónicos, pueden ser una monstruosidad.</p>
+                    </div>
+
+                    <a href="#" class="btn-close-popup">X</a>
+                </div>
+            </div></a>
+        </li>
+        <li class="category-column">
+            <a class="h-text-decoration-none"><h2 class="column-name">VIVIENDA</h2></a>
+            <a class="top-category-article h-text-decoration-none" style="flex-direction: inherit;" href="#vivienda6"><img class="category-top-img" src="https://1.bp.blogspot.com/-bZY7Aw0Glx4/XosIcLByj5I/AAAAAAAAdoI/7k_y0FnluDQbMKlM8Gzjg90f9Z-Hr5juwCLcBGAsYHQ/s1600/Decorar%2Blas%2Bventanas_Decorar%2Ben%2Bfamilia3.jpg">
+            <div class="column-description"><h3 class="top-category-title">Las mejores ventanas de repuesto de Anderser de 2021</h3><p class="read-time">6 minutos leerlo</p></div>
+            <div class="container-all" id="vivienda6">
+                <div class="popup-r">
+                    <div class="img" style="background-image: url(https://1.bp.blogspot.com/-bZY7Aw0Glx4/XosIcLByj5I/AAAAAAAAdoI/7k_y0FnluDQbMKlM8Gzjg90f9Z-Hr5juwCLcBGAsYHQ/s1600/Decorar%2Blas%2Bventanas_Decorar%2Ben%2Bfamilia3.jpg);"></div>
+                    <div class="container-text">
+                        <h1>WINDOWS</h1>
+                        <h3>Las mejores ventanas de repuesto de Anderser de 2021</h3>
+                        <p>Si alguna vez se ha preguntado cómo aprovechar al máximo el almacenamiento de su sala de estar, no está solo. Casi todos los propietarios están buscando formas de mantener funcional su habitación más utilizada y, al mismo tiempo, mantenerla estéticamente atractiva. A la luz de eso, decidimos pedir consejo a los expertos. Le pedimos a seis profesionales del diseño de interiores que compartieran sus mejores trucos de almacenamiento en el salón.
+                            Esto es lo que tenían que decir:</p>
+                        <h3>INVIERTE EN UNA OTOMANA DE ALMACENAMINETO</h3>
+                        <p>“Las otomanas de almacenamiento son una gran solución para las salas de estar porque tienen un doble propósito. Además de tener un lugar encantador 
+                            para descansar los pies, brindan un espacio de buen tamaño para guardar los artículos que no desea en toda la sala de estar. Este podría ser un 
+                            buen lugar para colocar mantas o almohadas adicionales, tal vez incluso sábanas si tiene un sofá cama plegable. Las otomanas de almacenamiento 
+                            pueden guardar DVD y juegos, controles remotos y esas revistas que se amontonan en la sala de estar. Este mueble funcional es el lugar perfecto 
+                            para guardar artículos antes de que lleguen los invitados ".</p>
+                        <h3>NO PASES POR ALTO LOS GANCHOS DE LA PARED</h3>
+                        <p>Instalar un par de ganchos de pared es una forma sencilla de organizar sombreros, abrigos y carteras sin desordenar cajones y mostradores.</p>
+                        <h3>OCULTAR EL DESORDEN</h3>
+                        <p>Algunos artículos, como los libros, se pueden almacenar muy bien, mientras que otros, como papeles, juguetes para niños o pequeños dispositivos electrónicos, pueden ser una monstruosidad.</p>
+                    </div>
+
+                    <a href="#" class="btn-close-popup">X</a>
+                </div>
+            </div></a>
+        </li>
+        <li class="category-column">
+            <a class="h-text-decoration-none"><h2 class="column-name">VIVIENDA</h2></a>
+            <a class="top-category-article h-text-decoration-none" style="flex-direction: inherit;" href="#vivienda7"><img class="category-top-img" src="https://i.pinimg.com/originals/e0/06/41/e00641793fbb95aaaa567af10de14014.jpg">
+            <div class="column-description"><h3 class="top-category-title">Las mejores ventanas de reemplazo</h3><p class="read-time">6 minutos leerlo</p></div>
+            <div class="container-all" id="vivienda7">
+                <div class="popup-l">
+                    <div class="img" style="background-image: url(https://i.pinimg.com/originals/e0/06/41/e00641793fbb95aaaa567af10de14014.jpg);"></div>
+                    <div class="container-text">
+                        <h1>WINDOWS</h1>
+                        <h3>Las mejores ventanas de reemplazo</h3>
+                        <p>Si alguna vez se ha preguntado cómo aprovechar al máximo el almacenamiento de su sala de estar, no está solo. Casi todos los propietarios están buscando formas de mantener funcional su habitación más utilizada y, al mismo tiempo, mantenerla estéticamente atractiva. A la luz de eso, decidimos pedir consejo a los expertos. Le pedimos a seis profesionales del diseño de interiores que compartieran sus mejores trucos de almacenamiento en el salón.
+                            Esto es lo que tenían que decir:</p>
+                        <h3>INVIERTE EN UNA OTOMANA DE ALMACENAMINETO</h3>
+                        <p>“Las otomanas de almacenamiento son una gran solución para las salas de estar porque tienen un doble propósito. Además de tener un lugar encantador 
+                            para descansar los pies, brindan un espacio de buen tamaño para guardar los artículos que no desea en toda la sala de estar. Este podría ser un 
+                            buen lugar para colocar mantas o almohadas adicionales, tal vez incluso sábanas si tiene un sofá cama plegable. Las otomanas de almacenamiento 
+                            pueden guardar DVD y juegos, controles remotos y esas revistas que se amontonan en la sala de estar. Este mueble funcional es el lugar perfecto 
+                            para guardar artículos antes de que lleguen los invitados ".</p>
+                        <h3>NO PASES POR ALTO LOS GANCHOS DE LA PARED</h3>
+                        <p>Instalar un par de ganchos de pared es una forma sencilla de organizar sombreros, abrigos y carteras sin desordenar cajones y mostradores.</p>
+                        <h3>OCULTAR EL DESORDEN</h3>
+                        <p>Algunos artículos, como los libros, se pueden almacenar muy bien, mientras que otros, como papeles, juguetes para niños o pequeños dispositivos electrónicos, pueden ser una monstruosidad.</p>
+                    </div>
+
+                    <a href="#" class="btn-close-popup">X</a>
+                </div>
+            </div></a>
+        </li>
+        <li class="category-column">
+            <a class="h-text-decoration-none"><h2 class="column-name">VIVIENDA</h2></a>
+            <a class="top-category-article h-text-decoration-none" style="flex-direction: inherit;" href="#vivienda8"><img class="category-top-img" src="https://larockola967.com/wp-content/uploads/2019/04/decoraci%C3%B3n-de-ventanas.jpg">
+            <div class="column-description"><h3 class="top-category-title">Guía de compra de ventanas de baño</h3><p class="read-time">7 minutos leerlo</p></div>
+            <div class="container-all" id="vivienda8">
+                <div class="popup-m">
+                    <div class="img" style="background-image: url(https://larockola967.com/wp-content/uploads/2019/04/decoraci%C3%B3n-de-ventanas.jpg);"></div>
+                    <div class="container-text">
+                        <h1>WINDOWS</h1>
+                        <h3>Guía de compra de ventanas de baño</h3>
+                        <p>Si alguna vez se ha preguntado cómo aprovechar al máximo el almacenamiento de su sala de estar, no está solo. Casi todos los propietarios están buscando formas de mantener funcional su habitación más utilizada y, al mismo tiempo, mantenerla estéticamente atractiva. A la luz de eso, decidimos pedir consejo a los expertos. Le pedimos a seis profesionales del diseño de interiores que compartieran sus mejores trucos de almacenamiento en el salón.
+                            Esto es lo que tenían que decir:</p>
+                        <h3>INVIERTE EN UNA OTOMANA DE ALMACENAMINETO</h3>
+                        <p>“Las otomanas de almacenamiento son una gran solución para las salas de estar porque tienen un doble propósito. Además de tener un lugar encantador 
+                            para descansar los pies, brindan un espacio de buen tamaño para guardar los artículos que no desea en toda la sala de estar. Este podría ser un 
+                            buen lugar para colocar mantas o almohadas adicionales, tal vez incluso sábanas si tiene un sofá cama plegable. Las otomanas de almacenamiento 
+                            pueden guardar DVD y juegos, controles remotos y esas revistas que se amontonan en la sala de estar. Este mueble funcional es el lugar perfecto 
+                            para guardar artículos antes de que lleguen los invitados ".</p>
+                        <h3>NO PASES POR ALTO LOS GANCHOS DE LA PARED</h3>
+                        <p>Instalar un par de ganchos de pared es una forma sencilla de organizar sombreros, abrigos y carteras sin desordenar cajones y mostradores.</p>
+                        <h3>OCULTAR EL DESORDEN</h3>
+                        <p>Algunos artículos, como los libros, se pueden almacenar muy bien, mientras que otros, como papeles, juguetes para niños o pequeños dispositivos electrónicos, pueden ser una monstruosidad.</p>
+                    </div>
+
+                    <a href="#" class="btn-close-popup">X</a>
+                </div>
+            </div></a>
+        </li>
+        <li class="category-column">
+            <a class="h-text-decoration-none"><h2 class="column-name">VIVIENDA</h2></a>
+            <a class="top-category-article h-text-decoration-none" style="flex-direction: inherit;" href="#vivienda9"><img class="category-top-img" src="https://www.elmueble.com/medio/2017/01/18/salon-con-grandes-ventanas-en-forma-de-arco_894efb59.jpg">
+            <div class="column-description"><h3 class="top-category-title">Los beneficios de las ventanas</h3><p class="read-time">7 minutos leerlo</p></div>
+            <div class="container-all" id="vivienda9">
+                <div class="popup-r">
+                    <div class="img" style="background-image: url(https://www.elmueble.com/medio/2017/01/18/salon-con-grandes-ventanas-en-forma-de-arco_894efb59.jpg);"></div>
+                    <div class="container-text">
+                        <h1>WINDOWS</h1>
+                        <h3>Los beneficios de las ventanas</h3>
+                        <p>Si alguna vez se ha preguntado cómo aprovechar al máximo el almacenamiento de su sala de estar, no está solo. Casi todos los propietarios están buscando formas de mantener funcional su habitación más utilizada y, al mismo tiempo, mantenerla estéticamente atractiva. A la luz de eso, decidimos pedir consejo a los expertos. Le pedimos a seis profesionales del diseño de interiores que compartieran sus mejores trucos de almacenamiento en el salón.
+                            Esto es lo que tenían que decir:</p>
+                        <h3>INVIERTE EN UNA OTOMANA DE ALMACENAMINETO</h3>
+                        <p>“Las otomanas de almacenamiento son una gran solución para las salas de estar porque tienen un doble propósito. Además de tener un lugar encantador 
+                            para descansar los pies, brindan un espacio de buen tamaño para guardar los artículos que no desea en toda la sala de estar. Este podría ser un 
+                            buen lugar para colocar mantas o almohadas adicionales, tal vez incluso sábanas si tiene un sofá cama plegable. Las otomanas de almacenamiento 
+                            pueden guardar DVD y juegos, controles remotos y esas revistas que se amontonan en la sala de estar. Este mueble funcional es el lugar perfecto 
+                            para guardar artículos antes de que lleguen los invitados ".</p>
+                        <h3>NO PASES POR ALTO LOS GANCHOS DE LA PARED</h3>
+                        <p>Instalar un par de ganchos de pared es una forma sencilla de organizar sombreros, abrigos y carteras sin desordenar cajones y mostradores.</p>
+                        <h3>OCULTAR EL DESORDEN</h3>
+                        <p>Algunos artículos, como los libros, se pueden almacenar muy bien, mientras que otros, como papeles, juguetes para niños o pequeños dispositivos electrónicos, pueden ser una monstruosidad.</p>
+                    </div>
+
+                    <a href="#" class="btn-close-popup">X</a>
+                </div>
+            </div></a>
+        </li>
+        
+    </ul>
+</section>
+
+<footer class="app-footer">
+    <div class="footer-top">
+        <div class="footer-left">
+            <img class="footer-logo" src="assets/img/edification-logo-yell.png">
+            <ul class="footer-link-list">
+                <li><a>CÓMO FUNCIONA</a></li>
+                <li><a>APOYO</a></li>
+                <li><a>SOBRE NOSTROS</a></li>
+                <li><a>ASÓCIESE CON NOSOTROS</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h4>Exención de responsabilidad publicitaria</h4>
+            <p>EDIFICATION puede tener una relación publicitaria con algunas de las empresas, marcas, productos y / o 
+                servicios incluidos en esta página. EDIFICATION también puede participar en programas de marketing de 
+                afiliados de terceros que le permiten a EDIFICATION ganar comisiones cuando hace clic en (y / o realiza 
+                compras utilizando) enlaces a empresas, marcas, productos y / o servicios en el sitio de EDIFICATION. 
+                Puede obtener más información sobre estos programas leyendo nuestra Política de privacidad. EDIFICATION.com 
+                se esfuerza por mantener su información precisa y actualizada. La información que ve en esta página puede 
+                ser diferente de la que encuentra cuando visita el sitio web de una empresa, marca, producto o proveedor 
+                de servicios específico. Todo el contenido se presenta sin garantía expresa o implícita.</p>
+        </div>
+    </div>
+    <ul class="footer-social">
+        <a><i class="fab fa-facebook-f"></i></a>
+        <a><i class="fab fa-instagram"></i></a>
+        <a><i class="fab fa-twitter"></i></a>
+        <a><i class="fab fa-pinterest-p"></i></a>
+        <a><i class="fab fa-youtube"></i></a>
+    </ul>
+</footer>
+
+</body>

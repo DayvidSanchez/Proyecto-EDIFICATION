@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edification</title>
+
+    <link rel="shortcut icon" href="assets/img/decoration-logo.png">
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+
+    <!-- MY CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style-in.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/header-nav-foo.css">
+
+</head>
+<body>
+<nav class="top-nav">
+        <div class="element">
+            
+            <ul class="list-red">
+                <li class="header-nav-item">
+                    <a href="index.html"><img src="assets/img/edification-logo-bl.png"></a>
+                </li>
+                <li class="header-nav-red">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="header-nav-red">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="header-nav-red">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="header-nav-red">
+                    <a href=""><i class="fab fa-pinterest"></i></a>
+                </li>
+                <li class="header-nav-deals">
+                    <a href="#"><img src="assets/img/shop-deals.png"></a>
+                </li>
+            </ul>
+        </div>
+</nav>
+<header class="navbar navbar-expand-lg main-header">
+    <div class="container">
+    <form class="form-inline my-2 my-lg-0">
+        <div class="cont-bsc">
+        <span class="icon"><i class="fa fa-search"></i></span>
+        <input type="search" id="search" placeholder="Buscar adorno" />
+        </div>
+      </form>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-catg" href="cocina.html">Cocina</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-catg" href="cuarto.html">Cuarto</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-catg" href="sala.html">Sala</a>
+          </li>        
+        <li class="nav-item">
+          <a class="nav-catg" href="bathroom.html">Baño</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-catg" href="piso.html">Piso</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-catg" href="ventanas.html">Ventanas</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-catg" href="viviendas.html">Renovación de viviendas</a>
+        </li>
+      </ul>
+    </div>
+
+</div>
+</header>
+<section class="seccion-principal">
+    <div class="contai-pricipal">
+        <div class="interac-info col-md-8">
+            <h1 class="">Queremos apoyarte a<br>encontrar las mejores opciones</h1>
+            <p>Puedes hayar los diseños que te gustan <br>para decorar tu hogar a tu manera<br>
+            no hay límite para lo que deseas, desliza <br>y empieza a ver.</p>
+            </br>
+            <button class="btn btn-outline-proyec my-2 my-sm-0" type="submit">Descure dónde</button>
+        </div>
+    </div>
+</section>
+<main class="pag-content">
+    <section class="seccion-tools">
+        <div class="row">
+            <div class="tools-card card row-inner">
+                <div class="card-top-container">
+                    <h2 class="card-headline h2">Animese a hacer cualquier accion con estas herramientas gratuitas</h2>
+                    <p class="card-description card-description-main">Respire aliviado cada vez que aborde una tarea en movimiento. 
+                        Desde investigar su nueva ciudad con nuestras<br> guías hasta elaborar presupuestos con cotizaciones de mudanza 
+                        gratuitas, nuestros recursos lo ayudarán en cada<br> paso del camino.</p>
+                </div>
+                <ul class="card-container">
+                    <li class="card-item">
+                        <a class="item-link"><img class="link-icon" src="assets/img/icon-prec.png"><h3 class="link-name">Explorar precios</h3></a>
+                        <p class="card-description">Encuentre el adorno que esta buscando o encuentra un relago para un familiar.</p>
+                        <a class="tools-card-link">Explorar ya<i class="fas fa-chevron-right"></i></a>
+                    </li>
+                    <li class="card-item">
+                        <a class="item-link"><img class="link-icon" src="assets/img/icon-decoration.png"><h3 class="link-name">Encuentre decoración</h3></a>
+                        <p class="card-description">Explora los lugares en los que encontrara lo que creemos que esta buscando.</p>
+                        <a class="tools-card-link">Explorar ya<i class="fas fa-chevron-right"></i></a>
+                    </li>
+                    <li class="card-item">
+                        <a class="item-link"><img class="link-icon" src="assets/img/icon-compani.png"><h3 class="link-name">Encuentra empresas</h3></a>
+                        <p class="card-description">Las mejores empresas tienen asociaones con nosotros.</p>
+                        <a class="tools-card-link">Explorar ya<i class="fas fa-chevron-right"></i></a>
+                    </li>
+                    <li class="card-item">
+                        <a class="item-link"><img class="link-icon" src="assets/img/icon-calculato.png"><h3 class="link-name">Compare costos</h3></a>
+                        <p class="card-description">El ahorro también es importante así que le peimos que vea esta herramienta.</p>
+                        <a class="tools-card-link">Explorar ya<i class="fas fa-chevron-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion-works">
+        <div class="works-block"><img class="works-img" src="https://cdn-pro.elsalvador.com/wp-content/uploads/2020/03/900x506-28.jpg">
+        <div class="works-card">
+            <h2 class="mb-18 label-secondary label-headline">Cómo funciona</h2>
+            <h3 class="h2 mb-18 works-headline">Muévete más rápido e inteligente</h3>
+            <div class="works-description"><p>Seamos realistas, probablemente no te guste moverte. Es posible que planificar, 
+                empacar y levantar objetos pesados ​​no esté en su lista de cosas favoritas.</p>
+            <p>¿Pero sabes lo que puedes amar? Nuevos capítulos de vida y nuevos lugares para llamar hogar. Vayamos a la parte divertida, más rápido.</p></div>
+            <a class="btn works-link-btn" style="color: white;">Pongámonos en marcha</a>
+        </div></div>
+    </section>
+
+    <section class="brand-logos">
+        <div class="brand-container">
+            <div class="container-top"><h2 class="heading-label-secondary sub-headline mb-18">TRAE LOS AHORROS</h2>
+            <h3 class="brand-title h2">Desempaque ofertas inmejorables</h3>
+        <p class="brand-description">No podemos endulzarlo, la mudanza puede ser costosa. Es por eso que nos asociamos 
+            con sus marcas favoritas para ayudarlo a ahorrar en todo lo que necesita (¡y desea!) Para su nuevo hogar. 
+            ¿La mejor parte? No encontrará estas ofertas en ningún otro lugar.</p></div>
+            <ul class="brand-list-container">
+                <li class="brand-item"><img class="brand-img" src="assets/img/logo-oechsle.png"></li>
+                <li class="brand-item"><img class="brand-img" src="assets/img/logo-casamia.png"></li>
+                <li class="brand-item"><img class="brand-img" src="assets/img/logo-casagrande.png"></li>
+                <li class="brand-item"><img class="brand-img" src="assets/img/logo-crate&barrel.jpg"></li>
+                <li class="brand-item"><img class="brand-img" src="assets/img/logo-falabella.png"></li>
+                <li class="brand-item"><img class="brand-img" src="assets/img/logo-lineo.png"></li>
+                <li class="brand-item"><img class="brand-img" src="assets/img/logo-mallhogar.jpg"></li>
+                <li class="brand-item"><img class="brand-img" src="assets/img/logo-promart.png"></li>
+            </ul>
+            <a class="brand-cta btn" style="color: white;">Ver tus oferas</a>
+        </div>
+    </section>
+
+    <section class="hp-moving-services moving-services">
+        <img class="services-img" src="https://www.tepsa.com.pe/wp-content/uploads/2020/06/encomiendas-banner.png">
+        <div class="services-cta">
+            <h2 class="label-secondary heading-sb mb-18">CONTRATAR SERVICIO PROFESIONAL</h2>
+            <h3 class="services-cta-block h2">Encuentre empresas de venta confiables para ayudar a aligerar la carga</h3>
+            <p class="block-descrption">Ahórrese tiempo, estrés y dolor de espalda llamando a los profesionales. Ya sea que 
+                esté planeando hacer bricolaje o simplemente necesita ayuda con el trabajo pesado, podemos ayudarlo a encontrar 
+                una solución que se adapte a su mudanza y a su presupuesto.</p>
+            <ul class="items-container">
+                <li class="service-item"><img class="service-icon" src="assets/img/icon-package.png">
+                <p class="service-name">Suministros de venta</p></li>
+                <li class="service-item"><img class="service-icon" src="assets/img/icon-packing.png">
+                    <p class="service-name">Embalaje y desembalaje</p></li>
+                <li class="service-item"><img class="service-icon" src="assets/img/icon-charge.png">
+                <p class="service-name">Cargando descargando</p></li>
+                <li class="service-item"><img class="service-icon" src="assets/img/icon-license.png">
+                    <p class="service-name">Licenciado y asegurado</p></li>
+                <li class="service-item"><img class="service-icon" src="assets/img/icon-storage.png">
+                <p class="service-name">Almacenamiento y contenedores</p></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="city-hub city-hub-faqs">
+        <div class="row"><div class="city-container container-width row-inner">
+            <h3 class="hub-headline mb-18">¿Qué es EDIFICATION?</h3>
+            <p class="hub-description description-answer">EDIFICATION es su ventanilla única para todas las cosas en movimiento. 
+                Sabemos que mudarse puede ser estresante y estamos aquí para ayudar a aligerar la carga. Como afiliado autorizado de USPS®, 
+                conectamos a más de 5 millones de personas cada año con ofertas de marcas reconocidas y recursos de expertos que facilitan 
+                la compra de decoraciones. Reunimos todo lo que necesita para su compra, para que no tenga que administrarlo por su cuenta. 
+                Con EDIFICATION, puede decir adiós al estrés del movimiento y saludar a las herramientas que le ayudarán a afrontar su movimiento.</p>
+            <h3 class="hub-headline mb-18">¿Cómo puedo usar los recursos de EDIFICATION para marcar mis tareas pendientes de mudanza?</h3>
+            <p class="hub-description description-answer">Estamos aquí para ayudarlo a tomar el control de su mudanza. Aprenda todo lo que 
+                necesita saber sobre su nueva área con nuestras <a>guías de la ciudad</a> y la <a>calculadora de costo de vida.</a> Organice todas sus 
+                tareas pendientes con nuestra lista de verificación de mudanzas personalizable. Compare empresas de mudanzas en nuestro 
+                sitio para encontrar los mejores servicios de mudanzas. Ordene antes de empacar, y lo ayudaremos a encontrar organizaciones 
+                benéficas en su área que recojan <a>donaciones gratis.</a> Presente un <a>cambio de dirección en línea</a> con USPS® y nos aseguraremos 
+                de que su correo se mueva con usted. No importa la tarea en movimiento, lo ayudamos a abordarla.</p>
+            <h3 class="hub-headline mb-18">Últimas actualizaciones y noticias:</h3>
+            <p class="hub-description description-answer">¿Está planeando una mudanza durante COVID-19? No eres el único. 15,9 millones de 
+                personas se trasladaron durante los primeros seis meses de la pandemia de coronavirus, según un <a>estudio</a> reciente de EDIFICATION. 
+                El estudio, que analizó las solicitudes de reenvío de correo de USPS® de febrero a julio, encontró que el número total de
+                movimientos durante el coronavirus aumentó en comparación con el mismo período del año pasado.</p>
+            <p class="hub-description description-answer">También descubrimos que las mudanzas temporales aumentaron en un 27% y la gente 
+                abandonó ciudades grandes y densamente pobladas como Manhattan, Brooklyn y Chicago en cantidades sin precedentes. Lea más 
+                sobre ese estudio <a>aquí</a>.</p>
+            <p class="hub-description description-answer">Si tiene planes de mudarse durante la pandemia, tome precauciones para que usted 
+                y su familia se mantengan saludables. Siga nuestra <a>guía de seguridad</a> para el <a>coronavirus</a> para evitar la propagación del 
+                virus el día de la mudanza. Si eres un estudiante universitario que se muda de los dormitorios para las vacaciones de invierno, 
+                aquí tienes algunos <a>consejos y recursos</a> que te ayudarán a aligerar la carga y mantenerte seguro.</p>
+            <p class="hub-description description-answer">Los meses de invierno y la pandemia pueden agregar estrés y ansiedad si está 
+                experimentando inestabilidad en la vivienda. Si se enfrenta a una posible <a>falta de vivienda</a> o corre el riesgo de que un 
+                <a>contrato</a> de <a>arrendamiento finalice durante el coronavirus</a>, nuestras guías lo conectan con recursos y consejos de expertos.</p>
+        </div>
+    </section>
+</main>
+<footer class="app-footer">
+    <div class="footer-top">
+        <div class="footer-left">
+            <img class="footer-logo" src="assets/img/edification-logo-yell.png">
+            <ul class="footer-link-list">
+                <li><a>CÓMO FUNCIONA</a></li>
+                <li><a>APOYO</a></li>
+                <li><a>SOBRE NOSTROS</a></li>
+                <li><a>ASÓCIESE CON NOSOTROS</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h4>Exención de responsabilidad publicitaria</h4>
+            <p>EDIFICATION puede tener una relación publicitaria con algunas de las empresas, marcas, productos y / o 
+                servicios incluidos en esta página. EDIFICATION también puede participar en programas de marketing de 
+                afiliados de terceros que le permiten a EDIFICATION ganar comisiones cuando hace clic en (y / o realiza 
+                compras utilizando) enlaces a empresas, marcas, productos y / o servicios en el sitio de EDIFICATION. 
+                Puede obtener más información sobre estos programas leyendo nuestra Política de privacidad. EDIFICATION.com 
+                se esfuerza por mantener su información precisa y actualizada. La información que ve en esta página puede 
+                ser diferente de la que encuentra cuando visita el sitio web de una empresa, marca, producto o proveedor 
+                de servicios específico. Todo el contenido se presenta sin garantía expresa o implícita.</p>
+        </div>
+    </div>
+    <ul class="footer-social">
+        <a><i class="fab fa-facebook-f"></i></a>
+        <a><i class="fab fa-instagram"></i></a>
+        <a><i class="fab fa-twitter"></i></a>
+        <a><i class="fab fa-pinterest-p"></i></a>
+        <a><i class="fab fa-youtube"></i></a>
+    </ul>
+</footer>
+</body>
+</html>
